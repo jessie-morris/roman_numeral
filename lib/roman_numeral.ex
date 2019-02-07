@@ -3,16 +3,10 @@ defmodule RomanNumeral do
   Documentation for RomanNumeral.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> RomanNumeral.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def convert(number) do
+    case number do
+      5 -> "V"
+      1 -> "I"
+    end
   end
 end
