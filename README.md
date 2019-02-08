@@ -1,21 +1,12 @@
 # RomanNumeral
 
-**TODO: Add description**
+The Kata says you should write a function to convert from normal numbers to Roman Numerals: eg
 
-## Installation
+     1 --> I
+     10 --> X
+     7 --> VII
+etc.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `roman_numeral` to your list of dependencies in `mix.exs`:
+For a full description of how it works, take a look at [this useful reference website] : which includes an implementation of the Kata in javascript.
 
-```elixir
-def deps do
-  [
-    {:roman_numeral, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/roman_numeral](https://hexdocs.pm/roman_numeral).
-
+There is no need to be able to convert numbers larger than about 3000. (The Romans themselves didn’t tend to go any higher)
