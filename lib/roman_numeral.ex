@@ -3,18 +3,6 @@ defmodule RomanNumeral do
   Documentation for RomanNumeral.
   """
 
-  # def convert(number) do
-  #   {_, numeral} =
-  #     case number do
-  #       10 -> {10, "X" <> convert(number - 10)}
-  #       5 -> {5, "V"}
-  #       4 -> {4, "IV"}
-  #       2 -> {2, "I" <> convert(number - 1)}
-  #       1 -> {1, "I"}
-  #       _ -> {0, ""}
-  #     end
-  #   numeral
-  # end
   def convert(number) do
     cond do
       number >= 1000 -> "M" <> convert(number - 1000)
