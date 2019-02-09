@@ -12,13 +12,10 @@ defmodule RomanNumeral do
     |> List.first()
   end
 
+  def convert(0, numeral), do: numeral
   def convert(number, numeral \\ "") do
     {value, symbol} = next_symbol(number)
-    if(number - value > 0) do
-       convert(number - value, numeral <> symbol)
-    else
-      numeral <> symbol
-    end
+    convert(number - value, numeral <> symbol)
   end
 
   def convert2(number) do
